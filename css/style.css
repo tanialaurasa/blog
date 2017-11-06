@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Light";
+    src: url("../fonts/Raleway-Light.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraLight";
+    src: url("../fonts/Raleway-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "WaitingfortheSunrise";
+    src: url("../fonts/WaitingfortheSunrise.ttf");
+}
+
+.header {
+  background-image: url("../img/railway.jpg");
+  height: 810px;
+  background-size: cover;
+  width: 100%;
+}
+
+.about-me {
+  display: flex;
+  width: 80%;
+  max-width: 774px;
+}
+
+.me {
+  height: 179px;
+  border-radius: 50%;
+}
+
+.about {
+  color: white;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+  font-family: Raleway-Light;
+  font-size: 17px;
+  word-spacing: 2px;
+  line-height: 30px;
+  text-shadow: 0 0.05em 0 rgba(0,0,0,0.5);
+}
+
+.name {
+  color: white;
+  float: right;
+  margin: 15px 55px 0 55px;
+  font-family: WaitingfortheSunrise;
+  font-size: 31px;
+  letter-spacing: 3px;
+  text-shadow: 0 0.05em 0 rgba(0,0,0,0.5);
+}
+
+.black-background {
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,.5);
+  height: 100%;
+  justify-content: center;
+}
+
+.column-img {
+  margin-right: 5%;
+}
+
+@media (max-width: 750px) {
+    .about-me {
+      display: block;
+      text-align: center;
+      max-width: 510px;
+    }
+    .black-background {
+      justify-content: center;
+    }
+    .column-img {
+      margin-right: 0;
+    }
+    .name {
+      float: none;
+      margin: auto;
+      margin-top: 20px;
+    }
+}
+
+.post {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-post {
+  font-size: 60px;
+  color: white;
+  text-shadow: 0 0.05em 0 rgba(0,0,0,0.5);
+  font-family: Raleway-Regular;
+}
+
+.post-link:hover .title-post {
+  opacity: 0.5;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header-post {
+  height: auto;
+}
+
+.content-post {
+  margin: 80px auto;
+  width: 56%;
+}
+
+.title-inpost {
+  font-weight: bold;
+  text-align: center;
+  color: currentColor;
+  text-shadow: none;
+}
+
+.black-post {
+  padding: 22px 0px;
+}
+
+.photo {
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 24px 0 24px 0;
+}
+
+p {
+  margin: 0 0 10px;
+  font-size: 19px;
+}
