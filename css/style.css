@@ -103,12 +103,59 @@
 }
 
 .post-link:hover .title-post {
-  opacity: 0.5;
+  color: #ac897d;
+  text-shadow: 0 0.05em 0 rgba(80, 18, 18, 0.5);
 }
 
 a:hover {
   text-decoration: none;
 }
+
+p {
+  margin: 0 0 10px;
+  font-size: 19px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+    text-align: center;
+    float: right;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #222;
+    background-color: #fff;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #855c4e;
+}
+
+.list-inline {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.portfolio.box {
+  display: inline-table;
+  border-radius: 13px;
+  padding: 0 11px;
+}
+
+/**** This is for Post ****/
 
 .header-post {
   height: auto;
@@ -137,7 +184,25 @@ a:hover {
   padding: 24px 0 24px 0;
 }
 
-p {
-  margin: 0 0 10px;
-  font-size: 19px;
+.img-relative {
+  position: relative;
 }
+
+.hover-back {
+  background-color: #e19972;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.hover-back:hover {
+  opacity: 0.15;
+  cursor: pointer;
+}
+
+/*Shift < - select litera
+Shift alt < - select words
+shift command < - select line
+Cmd / - comment*/
